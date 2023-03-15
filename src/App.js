@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import Loading from "./components/loading/loading.components";
+
+import "./App.css";
+
+const Home = React.lazy(() => import("./routes/home/home.component"));
+const ChatApp = React.lazy(() =>
+  import("./routes/chat-app/chat-app.component")
+);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/chat"
+          element={
+            <Suspense fallback={<Loading />}>
+              <ChatApp />
+            </Suspense>
+          }
+        />
+      </Routes>
     </div>
   );
 }

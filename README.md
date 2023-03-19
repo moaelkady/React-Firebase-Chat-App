@@ -1,12 +1,17 @@
 # React Firebase Chat App
 
-This is a chat application built with React and Firebase. With this app, you can log in using your Google account and enter a room password. Your chat mate can enter the same room password, and you can both join the same chat room and start talking.
+Welcome to the Chat App, a real-time chat application built using React and Firebase. With this app, you can sign in with Google, share a room key with your friends, and start chatting right away.
 
-## Project Status
-This project is currently in progress, and it is the first day of development. The styling is still being worked on.
+## Features
+1. Real-time chat functionality.
+2. Sign in with Google.
+3. Share room key with friends to join chat.
+4. Lightning-fast loading times with a perfect performance score.
+5. ADA compliant.
+6. User-friendly interface.
 
 ## Live Demo
-You can view a live demo of the app at [ChatApp Website](http://ramadan-kareem2023.web.app/).
+You can try the app out for yourself by visiting the live demo at [ChatApp Website](http://ramadan-kareem2023.web.app/).
 
 ## Technologies Used
 * React
@@ -22,8 +27,11 @@ To run this project locally, you will need to:
 ## How to Use
 1. Log in with your Google account
 2. Enter a room password to create or join a chat room
-3. Share the room password with your chat mate so they can join the same room
+3. Share the room password with your friends so they can join the same room
 4. Start chatting!
    
 ## Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request.
+
+## License
+The Chat App is open source software licensed under the MIT License.

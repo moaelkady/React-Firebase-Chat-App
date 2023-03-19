@@ -9,10 +9,30 @@
 .fontZero {
   font-size: 0;
 }
-html, body {
-  overflow: hidden;
+html {
+  background-color: #e9eee8;
 }
-
 .route-view-container {
   margin-top: 100px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #030917;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: #4c4c6a;
+	border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(58, 57, 57, 0.685)
 }

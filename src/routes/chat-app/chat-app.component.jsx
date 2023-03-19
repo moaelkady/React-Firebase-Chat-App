@@ -36,9 +36,9 @@ const ChatApp = () => {
       {!isInChat ? (
         <div className="room-container">
           <div className="container">
-            <h2 class="room-title">Type your room password</h2>
-            <input class="room-input" type="password" onChange={handleChange} />
-            <Button class="room-enter-btn" onClick={handleClick}>
+            <h2 className="room-title">Type your room password</h2>
+            <input className="room-input" type="password" onChange={handleChange} />
+            <Button className="room-enter-btn" onClick={handleClick}>
               Enter Room
             </Button>
           </div>

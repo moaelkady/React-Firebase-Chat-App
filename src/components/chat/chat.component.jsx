@@ -18,6 +18,11 @@ const Chat = ({ room }) => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
   const messagesRef = collection(db, "messages");
+  const [screenSize, setScreenSize] = useState(window.innerHeight);
+
+  window.addEventListener("resize", () => {
+    setScreenSize(window.innerHeight);
+  });
 
   useEffect(() => {
     const queryMessages = query(
@@ -61,7 +66,7 @@ const Chat = ({ room }) => {
         window.scroll({ top: target.scrollHeight, behavior: "smooth" });
       });
     }
-  }, []);
+  }, [screenSize]);
 
   return (
     <div className="chat-app">

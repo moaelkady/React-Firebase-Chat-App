@@ -1,0 +1,25 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+  .logo {
+    margin-bottom: 20px;
+    background-color: #030917;
+    width: 100px;
+    height: 100px;
+    background-image: url(../../logo.svg);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+}

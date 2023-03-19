@@ -1,6 +1,6 @@
-import PrimaryButton from "../primary-button/primary-button.component";
 import { auth, provider } from "../../utils/firebase/firebase.utils";
 import { signInWithPopup } from "firebase/auth";
+import Button from "../button/button.component";
 import Cookies from "universal-cookie";
 import "./auth.styles.scss";
 
@@ -18,10 +18,9 @@ const Auth = ({ setIsAuth }) => {
   };
   return (
     <div className="auth">
-      <p> Sign In With Google To Continue </p>
-      <PrimaryButton onClick={signInWithGoogle}>
-        Sign In With Google
-      </PrimaryButton>
+      <div className="logo"></div>
+      <div className="title">Welcome to Your Chat App</div>
+      <Button onClick={signInWithGoogle}> Sign In With Google </Button>
     </div>
   );
 };

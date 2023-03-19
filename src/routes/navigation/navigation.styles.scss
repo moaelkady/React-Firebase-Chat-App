@@ -1,0 +1,25 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #030917;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        img {
+            width: 48px;
+            margin-right:10px ;
+            height: auto;
+        }
+    }
+}

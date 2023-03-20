@@ -90,12 +90,16 @@ const Chat = ({ room }) => {
       <form onSubmit={handleSubmit} className="new-message-form">
         <input
           type="text"
+          id="newMessageBox"
           value={newMessage}
           onChange={handleChange}
           className="new-message-input"
           placeholder="Type your message here..."
         />
-        <button type="submit" className="send-button">
+        <button
+          type="submit"
+          className={newMessage ? "send-button active" : "send-button"}
+        >
           <svg style={{ width: "24px", height: "24px" }} viewBox="0 0 24 24">
             <path
               fill="rgba(0,0,0,.38)"

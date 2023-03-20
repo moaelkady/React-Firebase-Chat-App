@@ -54,7 +54,7 @@
       height: 40px;
       width: 40px;
       border-radius: 50%;
-      padding: 2px 0 0 0;
+      padding: 7px 0 0 0;
       margin: 10px;
       transition: all 0.15s ease-in-out;
       svg {
@@ -68,6 +68,14 @@
           path {
             fill: #fff;
           }
+        }
+      }
+    }
+    button.active {
+      background: rgba(44, 43, 43, 0.25);
+      svg {
+        path {
+          fill: #fff;
         }
       }
     }

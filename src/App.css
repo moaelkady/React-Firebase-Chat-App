@@ -12,6 +12,10 @@
   padding: 0;
   margin: 0;
 }
+.hide {
+  font-size: 0;
+  display: none;
+}
 .fontZero {
   font-size: 0;
 }
